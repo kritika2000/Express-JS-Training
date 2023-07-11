@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Traditional</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h5>HTTP Methods</h5>
+        <div>
+          <a href="index.html">regular </a>
+          <a href="javascript.html">javascript </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- With GET method we send the data using query params and not Content-Type is set. 
+      This request header is set only for POST and PUT requests. -->
+      <!-- For POST method the Content-Type will be x-www-form-urlencoded and the data
+      is sent as key-value pairs.-->
+      <form action="/login" method="POST">
+        <h3>Traditional Form</h3>
+        <div class="form-row">
+          <label for="name"> enter name </label>
+          <input type="text" name="name" id="name" autocomplete="false" />
+        </div>
+        <button type="submit" class="block">submit</button>
+      </form>
+    </main>
+  </body>
+</html>
